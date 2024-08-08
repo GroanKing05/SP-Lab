@@ -1,5 +1,5 @@
 %% Roll No. 2023112005
-%% Lab1: MATLAB BASICS
+%% Lab1: MATLAB BASICS - All different files/codes are put into this file.
 % First creating the x-axis, from 0 to 3*pi with 1000 equidistant data
 % points
 x = linspace(0,3*pi,1000);
@@ -27,5 +27,13 @@ plot(x3,y3);
 grid on;
 title('Sine Functions');
 ylim([-1.2,1.2]);
+
+%% Plotting square wave with 30% duty cycle
+sqw = [0, ones(1,3), zeros(1,7), ones(1,3), zeros(1,7)];
+x_axis = 0:20;
+stem(x_axis,sqw);
+ylim([-1,2]);
+
+
 
 
